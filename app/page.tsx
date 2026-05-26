@@ -184,7 +184,8 @@ export default function Home() {
       <main id="top">
         <section className="relative mx-auto grid max-w-7xl gap-12 px-5 pb-20 pt-14 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:pb-28 lg:pt-20">
           <div>
-            <div className="mb-8 inline-flex rounded-full border border-emerald-950/10 bg-white/70 px-4 py-2 text-xs font-black uppercase tracking-[0.28em] text-emerald-700 shadow-sm dark:border-white/10 dark:bg-white/10 dark:text-emerald-200">
+            <div className="mb-8 flex items-center gap-3 text-xs font-black uppercase tracking-[0.28em] text-emerald-700 dark:text-emerald-300">
+              <span className="h-px w-10 bg-emerald-600/60 dark:bg-emerald-300/50" aria-hidden="true" />
               White-label SaaS for car rental operators
             </div>
             <h1 className="font-serif text-5xl font-black leading-[0.93] tracking-[-0.06em] text-[#121611] dark:text-[#f7f5ef] sm:text-6xl lg:text-7xl">
