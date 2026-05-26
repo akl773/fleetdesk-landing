@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 240" role="img" aria-labelledby="title desc">
+  <title id="title">FleetDecks logo</title>
+  <desc id="desc">FleetDecks wordmark with a green operations dashboard mark.</desc>
+  <defs>
+    <linearGradient id="mark" x1="24" y1="20" x2="204" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34d399" />
+      <stop offset="1" stop-color="#a3e635" />
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="208" height="208" rx="54" fill="#07110d" />
+  <rect x="34" y="34" width="172" height="172" rx="44" fill="url(#mark)" />
+  <rect x="62" y="70" width="116" height="92" rx="26" fill="#07110d" />
+  <path d="M84 95h57c19 0 34 15 34 34s-15 34-34 34H84v-26h56c6 0 10-3 10-8s-4-8-10-8H84V95Z" fill="#ecfdf5" />
+  <path d="M84 121h48v26H84v-26Z" fill="#34d399" />
+  <circle cx="87" cy="176" r="10" fill="#ecfdf5" />
+  <circle cx="153" cy="176" r="10" fill="#ecfdf5" />
+  <path d="M89 176h62" stroke="#34d399" stroke-width="8" stroke-linecap="round" />
+  <text x="260" y="132" fill="#07110d" font-family="Manrope, Inter, Arial, sans-serif" font-size="76" font-weight="900" letter-spacing="-4">FleetDecks</text>
+  <text x="265" y="176" fill="#047857" font-family="Manrope, Inter, Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="6">WHITE-LABEL RENTAL OPS</text>
+</svg>

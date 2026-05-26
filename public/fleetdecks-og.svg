@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">FleetDecks Open Graph image</title>
+  <desc id="desc">A branded FleetDecks social preview for white-label car rental operations software.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f7f5ef" />
+      <stop offset="0.52" stop-color="#ecfdf5" />
+      <stop offset="1" stop-color="#d9f99d" />
+    </linearGradient>
+    <linearGradient id="accent" x1="776" y1="116" x2="1086" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34d399" />
+      <stop offset="1" stop-color="#a3e635" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="32" stdDeviation="28" flood-color="#064e3b" flood-opacity="0.24" />
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)" />
+  <circle cx="1050" cy="-70" r="330" fill="#10b981" opacity="0.16" />
+  <circle cx="1120" cy="575" r="270" fill="#65a30d" opacity="0.15" />
+  <path d="M65 98c164 31 285 2 412-41 131-44 250-52 390-4" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="10 18" opacity="0.34" />
+  <g transform="translate(70 70)">
+    <rect width="92" height="92" rx="26" fill="#07110d" />
+    <rect x="13" y="13" width="66" height="66" rx="19" fill="url(#accent)" />
+    <rect x="25" y="27" width="43" height="34" rx="10" fill="#07110d" />
+    <path d="M33 37h22c8 0 14 6 14 14s-6 14-14 14H33V53h21c3 0 4-1 4-3s-1-3-4-3H33V37Z" fill="#ecfdf5" />
+    <text x="114" y="58" fill="#07110d" font-family="Manrope, Inter, Arial, sans-serif" font-size="38" font-weight="900" letter-spacing="-1.8">FleetDecks</text>
+    <text x="116" y="86" fill="#047857" font-family="Manrope, Inter, Arial, sans-serif" font-size="15" font-weight="900" letter-spacing="4">WHITE-LABEL CAR RENTAL OPS</text>
+  </g>
+  <g transform="translate(70 202)">
+    <text fill="#07110d" font-family="Fraunces, Georgia, serif" font-size="74" font-weight="900" letter-spacing="-4">
+      <tspan x="0" y="0">One dashboard for</tspan>
+      <tspan x="0" y="82">bookings, fleet,</tspan>
+      <tspan x="0" y="164">and WhatsApp demand.</tspan>
+    </text>
+    <text x="2" y="226" fill="#14532d" font-family="Manrope, Inter, Arial, sans-serif" font-size="27" font-weight="700">
+      Built for Indian rental operators replacing chats, calls, and sheets.
+    </text>
+  </g>
+  <g transform="translate(774 116)" filter="url(#shadow)">
+    <rect width="354" height="390" rx="48" fill="#07110d" />
+    <rect x="28" y="28" width="298" height="62" rx="25" fill="#ffffff" opacity="0.08" />
+    <text x="52" y="67" fill="#ecfdf5" font-family="Manrope, Inter, Arial, sans-serif" font-size="21" font-weight="900">Live Desk</text>
+    <rect x="216" y="43" width="82" height="30" rx="15" fill="#34d399" />
+    <text x="232" y="64" fill="#052e16" font-family="Manrope, Inter, Arial, sans-serif" font-size="13" font-weight="900">12 trips</text>
+    <g transform="translate(28 116)">
+      <rect width="140" height="86" rx="24" fill="#ffffff" opacity="0.09" />
+      <text x="20" y="33" fill="#6ee7b7" font-family="Manrope, Inter, Arial, sans-serif" font-size="13" font-weight="900" letter-spacing="2">LEAD</text>
+      <text x="20" y="62" fill="#ecfdf5" font-family="Manrope, Inter, Arial, sans-serif" font-size="17" font-weight="800">Airport pickup</text>
+    </g>
+    <g transform="translate(186 116)">
+      <rect width="140" height="86" rx="24" fill="#ffffff" opacity="0.09" />
+      <text x="20" y="33" fill="#6ee7b7" font-family="Manrope, Inter, Arial, sans-serif" font-size="13" font-weight="900" letter-spacing="2">RETURN</text>
+      <text x="20" y="62" fill="#ecfdf5" font-family="Manrope, Inter, Arial, sans-serif" font-size="17" font-weight="800">Inspection</text>
+    </g>
+    <rect x="28" y="224" width="298" height="126" rx="30" fill="#f7f5ef" />
+    <text x="52" y="261" fill="#047857" font-family="Manrope, Inter, Arial, sans-serif" font-size="13" font-weight="900" letter-spacing="3">TODAY'S FLOW</text>
+    <circle cx="58" cy="298" r="13" fill="#10b981" />
+    <path d="M88 298h190" stroke="#064e3b" stroke-width="10" stroke-linecap="round" opacity="0.35" />
+    <circle cx="58" cy="330" r="13" fill="#a3e635" />
+    <path d="M88 330h148" stroke="#064e3b" stroke-width="10" stroke-linecap="round" opacity="0.2" />
+  </g>
+</svg>

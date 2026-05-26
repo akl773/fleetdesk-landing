@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">FleetDecks icon</title>
+  <desc id="desc">A green FleetDecks monogram with route lines and vehicle cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="68" y1="58" x2="444" y2="454" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34d399" />
+      <stop offset="1" stop-color="#a3e635" />
+    </linearGradient>
+    <linearGradient id="panel" x1="138" y1="132" x2="378" y2="374" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#123c2d" />
+      <stop offset="1" stop-color="#07110d" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="#07110d" />
+  <rect x="56" y="56" width="400" height="400" rx="104" fill="url(#bg)" />
+  <rect x="112" y="118" width="288" height="276" rx="60" fill="url(#panel)" />
+  <path d="M171 181h147c43 0 76 33 76 75s-33 75-76 75H171v-56h141c12 0 21-8 21-19s-9-19-21-19H171v-56Z" fill="#ecfdf5" />
+  <path d="M171 237h120v56H171v-56Z" fill="#34d399" />
+  <circle cx="179" cy="351" r="24" fill="#ecfdf5" />
+  <circle cx="331" cy="351" r="24" fill="#ecfdf5" />
+  <path d="M180 350h150" stroke="#34d399" stroke-width="18" stroke-linecap="round" />
+</svg>
