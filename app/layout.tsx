@@ -3,11 +3,42 @@ import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
 
 const siteName = "FleetDecks";
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://fleetdecks.in";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://fleetdecks.com";
 const title = "FleetDecks | White-label car rental operations software";
 const description =
   "FleetDecks gives car rental operators one white-label dashboard for bookings, fleet operations, WhatsApp leads, and customer handoffs.";
 const socialImage = "/fleetdecks-og.svg";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: siteName,
+      url: siteUrl,
+      logo: `${siteUrl}/fleetdecks-logo.svg`,
+      description,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      name: siteName,
+      url: siteUrl,
+      publisher: { "@id": `${siteUrl}/#organization` },
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": `${siteUrl}/#software`,
+      name: siteName,
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web",
+      url: siteUrl,
+      description,
+      publisher: { "@id": `${siteUrl}/#organization` },
+    },
+  ],
+};
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -107,7 +138,13 @@ export default function RootLayout({
       className={`${manrope.variable} ${fraunces.variable} h-full scroll-smooth antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

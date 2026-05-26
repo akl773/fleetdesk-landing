@@ -1,0 +1,27 @@
+# FleetDecks
+
+> White-label car rental operations software. One dashboard for bookings, fleet operations, WhatsApp leads, deposits, and customer handoffs — built for lean rental teams.
+
+## About
+
+FleetDecks is a white-label SaaS operating system for car rental operators. It replaces scattered WhatsApp chats, phone calls, and spreadsheets with a single branded dashboard for running daily rental operations.
+
+## Key capabilities
+
+- AI booking assistant: captures and qualifies leads from WhatsApp, app, and web, and hands hot enquiries to the team.
+- One fleet command desk: tracks booking status, vehicle readiness, handovers, returns, deposits, and upcoming trips from a single dashboard.
+- White-label by design: launches with the operator's own brand, customer touchpoints, and workflows.
+- Built for lean teams: handles high WhatsApp volume, document checks, security deposits, and city-to-city demand.
+
+## Why operators switch
+
+- One desk instead of five disconnected tools.
+- Built for high WhatsApp enquiry volume.
+- Deposits and documents tracked against every trip.
+- No enterprise bloat — only the workflows a rental desk runs daily.
+- Live in days, not months.
+
+## Contact
+
+- Sales: sales@fleetdecks.in
+- Website: https://fleetdecks.com
