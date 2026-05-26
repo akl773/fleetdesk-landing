@@ -7,8 +7,6 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://fleetdecks.com";
 const title = "FleetDecks | White-label car rental operations software";
 const description =
   "FleetDecks gives car rental operators one white-label dashboard for bookings, fleet operations, WhatsApp leads, and customer handoffs.";
-const socialImage = "/fleetdecks-og.svg";
-
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -83,28 +81,11 @@ export const metadata: Metadata = {
     siteName,
     title,
     description,
-    images: [
-      {
-        url: socialImage,
-        width: 1200,
-        height: 630,
-        alt: "FleetDecks white-label car rental operations dashboard",
-        type: "image/svg+xml",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
-    images: [
-      {
-        url: socialImage,
-        width: 1200,
-        height: 630,
-        alt: "FleetDecks white-label car rental operations dashboard",
-      },
-    ],
   },
   robots: {
     index: true,

@@ -5,7 +5,7 @@ import { useEffect } from "react";
 type Theme = "light" | "dark";
 
 const contactHref =
-  "mailto:sales@fleetdecks.in?subject=FleetDecks%20sales%20demo&body=Hi%20FleetDecks%2C%20I%27d%20like%20to%20see%20how%20this%20can%20work%20for%20my%20car%20rental%20business.";
+  "https://wa.me/919521876832?text=Hi%20FleetDecks%2C%20I%27d%20like%20to%20see%20how%20FleetDecks%20can%20work%20for%20my%20car%20rental%20business.";
 
 const painPoints = [
   "Bookings start on WhatsApp, continue on calls, and vanish into spreadsheets.",
@@ -175,7 +175,7 @@ export default function Home() {
               href={contactHref}
               className="hidden rounded-full bg-emerald-500 px-5 py-3 text-sm font-black text-emerald-950 shadow-[0_18px_45px_rgba(16,185,129,0.32)] transition hover:-translate-y-0.5 hover:bg-emerald-400 sm:inline-flex"
             >
-              Contact Sales
+              Chat on WhatsApp
             </a>
           </div>
         </nav>
@@ -199,7 +199,7 @@ export default function Home() {
                 href={contactHref}
                 className="inline-flex items-center justify-center rounded-full bg-emerald-500 px-7 py-4 text-base font-black text-emerald-950 shadow-[0_26px_60px_rgba(16,185,129,0.35)] transition hover:-translate-y-1 hover:bg-emerald-400 focus:outline-none focus:ring-4 focus:ring-emerald-400/40"
               >
-                Contact Sales
+                Chat on WhatsApp
               </a>
               <a
                 href="#features"
@@ -364,7 +364,7 @@ export default function Home() {
                 href={contactHref}
                 className="inline-flex items-center justify-center rounded-full bg-emerald-950 px-8 py-4 text-base font-black text-emerald-50 transition hover:-translate-y-1 hover:bg-[#10251b] focus:outline-none focus:ring-4 focus:ring-emerald-950/30"
               >
-                Contact Sales
+                Chat on WhatsApp
               </a>
             </div>
           </div>
@@ -376,7 +376,7 @@ export default function Home() {
           <p className="font-bold">FleetDecks. White-label car rental operations.</p>
           <div className="flex gap-5 font-bold">
             <a className="hover:text-emerald-600 dark:hover:text-emerald-300" href={contactHref}>
-              Contact
+              WhatsApp
             </a>
             <a className="hover:text-emerald-600 dark:hover:text-emerald-300" href="#features">
               Features
