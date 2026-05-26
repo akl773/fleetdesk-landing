@@ -102,9 +102,13 @@ export default function Home() {
       <header className="sticky top-0 z-30 border-b border-emerald-950/10 bg-[#f7f5ef]/80 backdrop-blur-xl transition-colors dark:border-white/10 dark:bg-[#07110d]/75">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8" aria-label="Primary navigation">
           <a href="#top" className="flex items-center gap-3" aria-label="FleetDecks home">
-            <span className="grid h-10 w-10 place-items-center rounded-2xl bg-emerald-500 text-lg font-black text-emerald-950 shadow-[0_16px_40px_rgba(16,185,129,0.35)]">
-              FD
-            </span>
+            <img
+              src="/fleetdecks-icon.svg"
+              alt=""
+              width="40"
+              height="40"
+              className="h-10 w-10 rounded-2xl shadow-[0_16px_40px_rgba(16,185,129,0.35)]"
+            />
             <span className="text-lg font-black tracking-tight">FleetDecks</span>
           </a>
 
