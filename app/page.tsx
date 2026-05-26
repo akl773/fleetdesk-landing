@@ -27,8 +27,8 @@ const features = [
     body: "Launch with your brand, your customer touchpoints, and workflows that feel owned by your rental business.",
   },
   {
-    title: "Built for Indian operators",
-    body: "Designed around lean teams, high WhatsApp volume, document checks, security deposits, and city-to-city demand.",
+    title: "Built for lean rental teams",
+    body: "Designed around small teams, high WhatsApp volume, document checks, security deposits, and city-to-city demand.",
   },
 ];
 
@@ -38,10 +38,27 @@ const steps = [
   "Run daily operations with fewer calls, cleaner handoffs, and faster closures.",
 ];
 
-const testimonials = [
-  "Placeholder testimonial from a self-drive rental operator.",
-  "Placeholder testimonial from an airport pickup partner.",
-  "Placeholder testimonial from a city fleet manager.",
+const reasons = [
+  {
+    title: "One desk, not five tools",
+    body: "Bookings, fleet status, handovers, deposits, and follow-ups live in one place instead of scattered chats, calls, and sheets.",
+  },
+  {
+    title: "Built for WhatsApp volume",
+    body: "Capture and qualify high-volume WhatsApp enquiries automatically, so no lead gets lost in a busy inbox.",
+  },
+  {
+    title: "Deposits and documents handled",
+    body: "Security deposits, ID checks, and handover checklists are tracked against every trip instead of living in someone's memory.",
+  },
+  {
+    title: "No enterprise bloat",
+    body: "A lean operating system for small teams — only the workflows a rental desk actually runs every day.",
+  },
+  {
+    title: "Live in days, not months",
+    body: "Connect your fleet, booking rules, and channels and start running operations fast, with your own brand on top.",
+  },
 ];
 
 function applyTheme(theme: Theme) {
@@ -147,8 +164,8 @@ export default function Home() {
             <a className="transition hover:text-emerald-600 dark:hover:text-emerald-300" href="#how-it-works">
               How it works
             </a>
-            <a className="transition hover:text-emerald-600 dark:hover:text-emerald-300" href="#proof">
-              Customers
+            <a className="transition hover:text-emerald-600 dark:hover:text-emerald-300" href="#why">
+              Why us
             </a>
           </div>
 
@@ -168,7 +185,7 @@ export default function Home() {
         <section className="relative mx-auto grid max-w-7xl gap-12 px-5 pb-20 pt-14 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:pb-28 lg:pt-20">
           <div>
             <div className="mb-8 inline-flex rounded-full border border-emerald-950/10 bg-white/70 px-4 py-2 text-xs font-black uppercase tracking-[0.28em] text-emerald-700 shadow-sm dark:border-white/10 dark:bg-white/10 dark:text-emerald-200">
-              White-label SaaS for Indian car rentals
+              White-label SaaS for car rental operators
             </div>
             <h1 className="font-serif text-5xl font-black leading-[0.93] tracking-[-0.06em] text-[#121611] dark:text-[#f7f5ef] sm:text-6xl lg:text-7xl">
               One dashboard to run bookings, fleet, and WhatsApp demand.
@@ -307,30 +324,28 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="proof" className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
-          <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
+        <section id="why" className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
+          <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.3em] text-emerald-600 dark:text-emerald-300">Trusted by operators</p>
+              <p className="text-sm font-black uppercase tracking-[0.3em] text-emerald-600 dark:text-emerald-300">Why FleetDecks</p>
               <h2 className="mt-4 font-serif text-4xl font-black tracking-[-0.05em] sm:text-5xl">
-                Ready for operator stories and partner logos.
+                Why operators switch from chats, calls, and sheets.
               </h2>
             </div>
-            <div className="space-y-5">
-              <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-                {["Logo", "Logo", "Logo", "Logo"].map((logo, index) => (
-                  <div key={`${logo}-${index}`} className="grid h-24 place-items-center rounded-3xl border border-dashed border-emerald-950/20 bg-white/50 text-sm font-black uppercase tracking-[0.25em] text-emerald-950/40 dark:border-white/20 dark:bg-white/10 dark:text-emerald-50/45">
-                    {logo}
+            <div className="grid gap-4 sm:grid-cols-2">
+              {reasons.map((reason) => (
+                <article key={reason.title} className="flex gap-4 rounded-[2rem] border border-emerald-950/10 bg-white/65 p-6 dark:border-white/10 dark:bg-white/10">
+                  <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-emerald-500 text-emerald-950 shadow-[0_14px_35px_rgba(16,185,129,0.3)]">
+                    <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="m5 12 5 5L20 7" />
+                    </svg>
+                  </span>
+                  <div>
+                    <h3 className="text-lg font-black tracking-[-0.02em]">{reason.title}</h3>
+                    <p className="mt-2 text-sm leading-6 text-emerald-950/68 dark:text-emerald-50/70">{reason.body}</p>
                   </div>
-                ))}
-              </div>
-              <div className="grid gap-4 md:grid-cols-3">
-                {testimonials.map((testimonial) => (
-                  <blockquote key={testimonial} className="rounded-[2rem] border border-emerald-950/10 bg-white/65 p-6 dark:border-white/10 dark:bg-white/10">
-                    <p className="text-base font-bold leading-7 text-emerald-950/72 dark:text-emerald-50/75">&ldquo;{testimonial}&rdquo;</p>
-                    <footer className="mt-5 text-xs font-black uppercase tracking-[0.24em] text-emerald-600 dark:text-emerald-300">Coming soon</footer>
-                  </blockquote>
-                ))}
-              </div>
+                </article>
+              ))}
             </div>
           </div>
         </section>

@@ -4,7 +4,7 @@ import "./globals.css";
 
 const siteName = "FleetDecks";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://fleetdecks.in";
-const title = "FleetDecks | White-label car rental software for India";
+const title = "FleetDecks | White-label car rental operations software";
 const description =
   "FleetDecks gives car rental operators one white-label dashboard for bookings, fleet operations, WhatsApp leads, and customer handoffs.";
 const socialImage = "/fleetdecks-og.svg";
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "FleetDecks",
     "white-label car rental software",
     "car rental operations",
-    "fleet management India",
+    "fleet management software",
     "WhatsApp booking assistant",
   ],
   authors: [{ name: siteName }],
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_IN",
+    locale: "en_US",
     url: "/",
     siteName,
     title,
