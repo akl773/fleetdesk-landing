@@ -81,12 +81,40 @@ function ThemeToggle() {
         window.localStorage.setItem("fleetdecks-theme", nextTheme);
         applyTheme(nextTheme);
       }}
-      className="group inline-flex items-center gap-2 rounded-full border border-emerald-950/10 bg-white/75 px-3 py-2 text-xs font-bold uppercase tracking-[0.22em] text-emerald-950 shadow-[0_14px_40px_rgba(15,23,42,0.08)] backdrop-blur transition hover:-translate-y-0.5 hover:border-emerald-500/50 dark:border-white/15 dark:bg-white/10 dark:text-emerald-100"
+      className="inline-grid h-10 w-10 place-items-center rounded-full border border-emerald-950/10 bg-white/75 text-emerald-950 shadow-[0_14px_40px_rgba(15,23,42,0.08)] backdrop-blur transition hover:-translate-y-0.5 hover:border-emerald-500/50 dark:border-white/15 dark:bg-white/10 dark:text-emerald-100"
     >
-      <span className="relative h-5 w-10 rounded-full bg-emerald-950 p-0.5 transition dark:bg-emerald-300">
-        <span className="block h-4 w-4 rounded-full bg-emerald-300 transition-transform group-hover:scale-90 dark:translate-x-5 dark:bg-emerald-950" />
-      </span>
-      Theme
+      <svg
+        className="h-5 w-5 dark:hidden"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2" />
+        <path d="M12 20v2" />
+        <path d="m4.93 4.93 1.41 1.41" />
+        <path d="m17.66 17.66 1.41 1.41" />
+        <path d="M2 12h2" />
+        <path d="M20 12h2" />
+        <path d="m6.34 17.66-1.41 1.41" />
+        <path d="m19.07 4.93-1.41 1.41" />
+      </svg>
+      <svg
+        className="hidden h-5 w-5 dark:block"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+      </svg>
     </button>
   );
 }
@@ -120,7 +148,7 @@ export default function Home() {
               How it works
             </a>
             <a className="transition hover:text-emerald-600 dark:hover:text-emerald-300" href="#proof">
-              Proof
+              Customers
             </a>
           </div>
 
@@ -282,7 +310,7 @@ export default function Home() {
         <section id="proof" className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
           <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.3em] text-emerald-600 dark:text-emerald-300">Social proof</p>
+              <p className="text-sm font-black uppercase tracking-[0.3em] text-emerald-600 dark:text-emerald-300">Trusted by operators</p>
               <h2 className="mt-4 font-serif text-4xl font-black tracking-[-0.05em] sm:text-5xl">
                 Ready for operator stories and partner logos.
               </h2>
